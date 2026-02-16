@@ -1,0 +1,6 @@
+@IronTrackApp_HostAddress = http://localhost:5183
+
+GET {{IronTrackApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
