@@ -1,6 +1,6 @@
 ﻿namespace IronTrackApp.Models
 {
-    public class Exercise
+    public class Exercise_XX
     {
         public int ExerciseID { get; set; }
         public string? ExerciseName { get; set; }

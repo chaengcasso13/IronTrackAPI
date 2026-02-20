@@ -10,6 +10,6 @@ namespace IronTrackApp.Data
 
         }
 
-        public DbSet<Exercise> Exercises { get; set; }
+        public DbSet<Exercise_XX> Exercises { get; set; }
     }
 }
