@@ -1,4 +1,6 @@
 ﻿using IronTrack.Application.Contracts.Persistence;
+using IronTrack.Application.Exceptions;
+using IronTrack.Domain;
 using MediatR;
 
 namespace IronTrack.Application.Features.BodyWeightLogs.Commands.DeleteBodyWeightLog
@@ -14,9 +16,11 @@ namespace IronTrack.Application.Features.BodyWeightLogs.Commands.DeleteBodyWeigh
         public async Task<Unit> Handle(DeleteBodyWeightLogCommand request, CancellationToken cancellationToken)
         {
             // retrieve domain entity obj
-            var leaveTypeToDelete = await _bodyWeightLogRepository.GetByIdAsync(request.UserID);
+            var bodyWeightLogToDelete = await _bodyWeightLogRepository.GetByIdAsync(request.UserID);
 
             // verify if record exist
+            if (bodyWeightLogToDelete == null)
+                throw new NotFoundException(nameof(BodyWeightLog), request.UserID);
 
             // remove from DB
             await _bodyWeightLogRepository.DeleteAsync(request.UserID);

@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using IronTrack.Application.Contracts.Persistence;
+using IronTrack.Application.Exceptions;
+using IronTrack.Domain;
 using MediatR;
 
 namespace IronTrack.Application.Features.BodyWeightLogs.Queries
@@ -19,6 +21,10 @@ namespace IronTrack.Application.Features.BodyWeightLogs.Queries
         {
             // query db
             var bodyWeightLog = await _bodyWeightLogRepository.GetByIdAsync(request.BodyWeightLogId);
+
+            // verify if record exist
+            if (bodyWeightLog == null)
+                throw new NotFoundException(nameof(BodyWeightLog), request.BodyWeightLogId);
 
             // convert db obj to dto obj
             var data = _mapper.Map<BodyWeightLogDto>(bodyWeightLog);
