@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using IronTrack.Application.Contracts.Persistence;
+using IronTrack.Application.Exceptions;
 using IronTrack.Domain;
 using MediatR;
 
@@ -18,6 +19,11 @@ namespace IronTrack.Application.Features.BodyWeightLogs.Commands.CreateBodyWeigh
         public async Task<int> Handle(CreateBodyWeightLogCommand request, CancellationToken cancellationToken)
         {
             // validate incoming data
+            var validator = new CreateBodyWeightLogCommandValidator(_bodyWeightLogRepository);
+            var validationResult = await validator.ValidateAsync(request);
+
+            if (!validationResult.IsValid)
+                throw new BadRequestException("Inavalid weight input.", validationResult);
 
             // convert to domain entity obj
             var bodyWeightLog = _mapper.Map<BodyWeightLog>(request);
