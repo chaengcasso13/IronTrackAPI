@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.Application", "Ir
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.Persistence", "IronTrack.Persistence\IronTrack.Persistence.csproj", "{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.Infrastructure", "IronTrack.Infrastructure\IronTrack.Infrastructure.csproj", "{DF341AB6-7A51-434A-ABB8-B1041C7ED09E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.API", "IronTrack.API\IronTrack.API.csproj", "{CC073F89-0B9C-4B2C-8649-A7C04F396558}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF341AB6-7A51-434A-ABB8-B1041C7ED09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF341AB6-7A51-434A-ABB8-B1041C7ED09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF341AB6-7A51-434A-ABB8-B1041C7ED09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF341AB6-7A51-434A-ABB8-B1041C7ED09E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC073F89-0B9C-4B2C-8649-A7C04F396558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC073F89-0B9C-4B2C-8649-A7C04F396558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC073F89-0B9C-4B2C-8649-A7C04F396558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC073F89-0B9C-4B2C-8649-A7C04F396558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +69,8 @@ Global
 		{0E7A81BC-4D29-4E83-B7D4-F7E9B815F49F} = {609EF36C-AFFF-4D4A-9470-F435093BF1EB}
 		{105D3527-4860-42A1-857C-DE8554B21820} = {609EF36C-AFFF-4D4A-9470-F435093BF1EB}
 		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F} = {D6C87300-D24F-4758-B4F6-30592F926E9F}
+		{DF341AB6-7A51-434A-ABB8-B1041C7ED09E} = {D6C87300-D24F-4758-B4F6-30592F926E9F}
+		{CC073F89-0B9C-4B2C-8649-A7C04F396558} = {BCFDE148-1DEE-447E-B088-5AADC7C2811D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F3B7D88-EC3C-4ADE-B2F4-EC6B5C973135}
