@@ -1,9 +1,8 @@
 ﻿using IronTrack.Domain;
 
-namespace IronTrack.Application.Contracts.Persistence
+namespace IronTrack.Application.Contracts.Persistence;
+
+public interface IBodyWeightLogRepository : IGenericRepository<BodyWeightLog>
 {
-    public interface IBodyWeightLogRepository : IGenericRepository<BodyWeightLog>
-    {
-        Task<bool> IsBodyWeightLogUnique(decimal name);
-    }
+    Task<bool> IsBodyWeightLogUnique(decimal name);
 }

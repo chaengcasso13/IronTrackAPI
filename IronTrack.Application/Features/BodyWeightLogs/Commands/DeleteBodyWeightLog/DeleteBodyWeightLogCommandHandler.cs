@@ -23,7 +23,7 @@ namespace IronTrack.Application.Features.BodyWeightLogs.Commands.DeleteBodyWeigh
                 throw new NotFoundException(nameof(BodyWeightLog), request.UserID);
 
             // remove from DB
-            await _bodyWeightLogRepository.DeleteAsync(request.UserID);
+            await _bodyWeightLogRepository.DeleteAsync(bodyWeightLogToDelete);
 
             // return if success
             return Unit.Value;

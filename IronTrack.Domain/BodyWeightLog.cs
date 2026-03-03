@@ -1,6 +1,6 @@
 ﻿namespace IronTrack.Domain
 {
-    public class BodyWeightLog
+    public class BodyWeightLog : BaseEntity
     {
         public int BodyWeightLogID { get; set; }
         public int UserID { get; set; }

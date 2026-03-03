@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.Domain", "IronTra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.Application", "IronTrack.Application\IronTrack.Application.csproj", "{105D3527-4860-42A1-857C-DE8554B21820}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IronTrack.Persistence", "IronTrack.Persistence\IronTrack.Persistence.csproj", "{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{105D3527-4860-42A1-857C-DE8554B21820}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105D3527-4860-42A1-857C-DE8554B21820}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105D3527-4860-42A1-857C-DE8554B21820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{CCEE2F1E-B0F1-4675-8BC3-CFBB0D429D4A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{0E7A81BC-4D29-4E83-B7D4-F7E9B815F49F} = {609EF36C-AFFF-4D4A-9470-F435093BF1EB}
 		{105D3527-4860-42A1-857C-DE8554B21820} = {609EF36C-AFFF-4D4A-9470-F435093BF1EB}
+		{C724CF24-5817-4A08-80F9-EAC0B9E2AC7F} = {D6C87300-D24F-4758-B4F6-30592F926E9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F3B7D88-EC3C-4ADE-B2F4-EC6B5C973135}
