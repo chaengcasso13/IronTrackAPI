@@ -8,14 +8,19 @@ public class ExerciseConfiguration : IEntityTypeConfiguration<Exercise>
 {
     public void Configure(EntityTypeBuilder<Exercise> builder)
     {
+        // let SQL server generate timestamps:
+        builder.Property(x => x.CreatedDate)
+            .HasDefaultValueSql("GETUTCDATE()");
+        builder.Property(x => x.ModifiedDate)
+            .HasDefaultValueSql("GETUTCDATE()");
+
+
         builder.HasData(
                 new Exercise()
                 {
-                    ExerciseID = 2,
+                    Id = 2,
                     ExerciseName = "Barbell Squats",
-                    MuscleGroup = "Quads",
-                    CreatedDate = DateTime.Now,
-                    ModifiedDate = DateTime.Now,
+                    MuscleGroup = "Quads"
                 }
             );
     }
